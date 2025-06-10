@@ -15,9 +15,9 @@ jobs:
         run: |
           echo "Checking for FinishTest entry in SpawnManagerTest.log"
           if grep -q "\[FinishTest\]" SpawnManagerTest.log; then
-            echo "✅ QA 자동화 테스트 통과"
+            echo "QA 자동화 테스트 통과"
             exit 0
           else
-            echo "❌ QA 자동화 테스트 실패: FinishTest 로그 누락"
+            echo "QA 자동화 테스트 실패: FinishTest 로그 누락"
             exit 1
           fi
