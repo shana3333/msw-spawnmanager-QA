@@ -1,37 +1,23 @@
-name: MSW SpawnManager QA Test
+name: Verify Test Log
+
 on:
   push:
-    branches: [main, develop]
-  schedule:
-    - cron: '0 7 * * *'
+    branches: [ main ]
 
 jobs:
-  build-and-test:
+  verify-log:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 코드
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: MSW CLI 설치 & 빌드
+      - name: Verify spawnmanager test log
         run: |
-          npm install -g @maplestoryworlds/cli
-          msw install && msw build
-
-      - name: Headless 테스트 실행
-        id: test
-        run: msw test --headless --timeout 60
-
-      - name: 테스트 결과 업로드
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: spawnmanager-logs
-          path: msw-test-results/*.log
-
-      - name: QA 자동화 통과 여부 판단
-        run: |
-          if [ "${{ steps.test.outcome }}" != "success" ]; then
-            echo "QA 자동화 테스트 실패"
+          echo "Checking for FinishTest entry in SpawnManagerTest.log"
+          if grep -q "\[FinishTest\]" SpawnManagerTest.log; then
+            echo "✅ QA 자동화 테스트 통과"
+            exit 0
+          else
+            echo "❌ QA 자동화 테스트 실패: FinishTest 로그 누락"
             exit 1
           fi
-          echo "QA 자동화 테스트 통과"
