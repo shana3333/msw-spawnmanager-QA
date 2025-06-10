@@ -1,0 +1,356 @@
+[10:44:11] [CLIENT] [stagechangePopup] ButtonClick -> stagestart_btn_2
+stagechangepopup.HandleButtonClickEvent (at MyDesk/stagechangepopup:341)
+
+[10:44:11] [CLIENT] [stagechangePopup] 2 스테이지 버튼 클릭됨
+stagechangepopup.HandleButtonClickEvent (at MyDesk/stagechangepopup:351)
+
+[10:44:11] [CLIENT] [stagechangePopup] => Called OnStageEnterServer(2)
+stagechangepopup.HandleButtonClickEvent (at MyDesk/stagechangepopup:382)
+
+[10:44:11] [CLIENT] [stagechangePopup] 2번 스테이지로 이동 -> /maps/stagemap_2/SpawnLocation
+stagechangepopup.TeleportToStage (at MyDesk/stagechangepopup:269)
+stagechangepopup.HandleButtonClickEvent (at MyDesk/stagechangepopup:408)
+
+[10:44:11] [SERVER] [TryIncrementGuideProgress] stageEnterCount => old=0, new=1
+playerData.TryIncrementGuideProgress (at MyDesk/playerData:1551)
+playerData.OnStageEnterServer (at MyDesk/playerData:1337)
+
+[10:44:11] [SERVER] [EnterEquipShopServer] stageEnterCount=0
+playerData.OnStageEnterServer (at MyDesk/playerData:1340)
+
+[10:44:12] [SERVER] [PlayerState] InitStageData() - 스테이지 시작 시점 레벨/HP 초기화
+PlayerState.InitStageData (at MyDesk/PlayerState:240)
+PlayerState.HandleEntityMapChangedEvent (at MyDesk/PlayerState:677)
+
+[10:44:12] [SERVER] [TryIncrementGuideProgress] stageEnterCount => old=1, new=2
+playerData.TryIncrementGuideProgress (at MyDesk/playerData:1551)
+playerData.OnStageEnterServer (at MyDesk/playerData:1337)
+
+[10:44:12] [CLIENT] [RemoveAllMonsters] => 현재 spawnedMonsters=0마리. 모두 Destroy 시도.
+SpawnManager.RemoveAllMonsters (at MyDesk/SpawnManager:496)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:33)
+
+[10:44:12] [CLIENT] [RemoveAllMonsters] => 완료.
+SpawnManager.RemoveAllMonsters (at MyDesk/SpawnManager:506)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:33)
+
+[10:44:12] [CLIENT] [PlayerState] ResetStageData -> level=1, exp=0, hp=100
+PlayerState.ResetStageData (at MyDesk/PlayerState:249)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:76)
+
+[10:44:12] [CLIENT] [SpawnManager:OnMapEnter] PlayerState ResetStageData() 호출
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:77)
+
+[10:44:12] [CLIENT] [SpawnManager:OnMapEnter] SkillManager Init/Reset
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:82)
+
+[10:44:12] [CLIENT] [SkillManager] InitStageSkills -> 슬롯 초기화 (learnedSkills는 유지)
+SkillManager.InitStageSkills (at MyDesk/SkillManager:443)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:83)
+
+[10:44:12] [CLIENT] [SkillManager] InitStageSkills -> done.
+SkillManager.InitStageSkills (at MyDesk/SkillManager:511)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:83)
+
+[10:44:12] [CLIENT] [SkillManager] ResetStageSkills -> 슬롯/엔티티만 초기화 (learnedSkills는 그대로)
+SkillManager.ResetStageSkills (at MyDesk/SkillManager:517)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:84)
+
+[10:44:12] [CLIENT] [SkillManager] InitStageSkills -> 슬롯 초기화 (learnedSkills는 유지)
+SkillManager.InitStageSkills (at MyDesk/SkillManager:443)
+SkillManager.ResetStageSkills (at MyDesk/SkillManager:519)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:84)
+
+[10:44:12] [CLIENT] [SkillManager] InitStageSkills -> done.
+SkillManager.InitStageSkills (at MyDesk/SkillManager:511)
+SkillManager.ResetStageSkills (at MyDesk/SkillManager:519)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:84)
+
+[10:44:12] [CLIENT] [SkillManager] ResetStageSkills -> 완료
+SkillManager.ResetStageSkills (at MyDesk/SkillManager:522)
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:84)
+
+[10:44:12] [CLIENT] [SpawnManager:OnMapEnter] 최종 data=6 rows
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:130)
+
+[10:44:12] [CLIENT] [SpawnManager:OnMapEnter] self.spawnPosition=SpawnManager
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:138)
+
+[10:44:12] [CLIENT] [INFO] SpawnManager 초기화 완료. stage=2 / csvRowCount=6
+SpawnManager.OnMapEnter (at MyDesk/SpawnManager:139)
+
+[10:44:12] [CLIENT] [PlayerState] InitStageData() - 스테이지 시작 시점 레벨/HP 초기화
+PlayerState.InitStageData (at MyDesk/PlayerState:240)
+PlayerState.HandleEntityMapChangedEvent (at MyDesk/PlayerState:677)
+
+[10:44:12] [CLIENT] [StageEnterNotifier] OnBeginPlay => stageNumber=2 => call OnStageEnter
+StageEnterNotifier.OnBeginPlay (at MyDesk/StageEnterNotifier:21)
+
+[10:44:12] [CLIENT] [SpawnManager:OnBeginPlay] player 저장 완료
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:146)
+
+[10:44:12] [CLIENT] [SpawnManager] TestMode ON: 테스트 지속시간=15초
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:150)
+
+[10:44:12] [CLIENT] [SpawnManager:OnBeginPlay] => 0.3초 반복 타이머(_TimerService) 등록 완료
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:160)
+
+[10:44:12] [CLIENT] [StageManager] OnBeginPlay 호출 -> 스테이지 초기화
+stagemanager.OnBeginPlay (at MyDesk/stagemanager:19)
+
+[10:44:12] [CLIENT] [StageManager] TimerPlayTime -> 0으로 리셋
+stagemanager.OnBeginPlay (at MyDesk/stagemanager:24)
+
+[10:44:12] [CLIENT] [StageManager] OnBeginPlay -> stageStartGold=12845.0
+stagemanager.OnBeginPlay (at MyDesk/stagemanager:43)
+
+[10:44:12] [CLIENT] [KillLogManager] OnBeginPlay -> KillCount=0 초기화
+KillLogManager.OnBeginPlay (at MyDesk/KillLogManager:14)
+
+[10:44:12] [CLIENT] [stagechangePopup] => Delayed RefreshCurrentQuestUI() after 0.3s
+stagechangepopup.HandleButtonClickEvent (at MyDesk/stagechangepopup:415)
+
+[10:44:12] [CLIENT] [Timer] 스테이지 맵 진입 -> 타이머 0 & UI On
+Timer.OnUpdate (at MyDesk/Timer:47)
+
+[10:44:12] [CLIENT] [OpenSkillSelect] 최종 후보 수=3 -> 슬롯에 표시 완료
+uiopenmanager.OpenSkillSelect (at MyDesk/uiopenmanager:468)
+uiopenmanager.OnUpdate (at MyDesk/uiopenmanager:571)
+
+[10:44:15] [CLIENT] [OpenSkillSelect] 최종 후보 수=3 -> 슬롯에 표시 완료
+uiopenmanager.OpenSkillSelect (at MyDesk/uiopenmanager:468)
+uiopenmanager.OnClickReroll (at MyDesk/uiopenmanager:705)
+uiopenmanager.OnBeginPlay (at MyDesk/uiopenmanager:103)
+
+[10:44:15] [CLIENT] [OnClickReroll] 리롤 버튼 클릭 -> 남은 횟수=4
+uiopenmanager.OnClickReroll (at MyDesk/uiopenmanager:713)
+uiopenmanager.OnBeginPlay (at MyDesk/uiopenmanager:103)
+
+[10:44:16] [CLIENT] [SkillBtn] ButtonClickEvent -> skillId=9.0, currentMap=stagemap_2
+SkillBtn.HandleButtonClickEvent (at MyDesk/SkillBtn:17)
+
+[10:44:16] [CLIENT] [INFO] daggerPooling OnBeginPlay 완료
+daggerPooling.OnBeginPlay (at MyDesk/daggerPooling:33)
+
+[10:44:16] [CLIENT] [InputSkill] 공격 슬롯=1, id=9.0, entity=풍마수리검, level=1
+SkillManager.InputSkill (at MyDesk/SkillManager:297)
+SkillManager.GetSkill (at MyDesk/SkillManager:220)
+SkillBtn.HandleButtonClickEvent (at MyDesk/SkillBtn:46)
+
+[10:44:18] [CLIENT] [TestLog] 2s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:19] [CLIENT] [TestLog] 3s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:20] [CLIENT] [TestLog] 4s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:20] [CLIENT] [SpawnRow] rowID=6, isBoss=0 -> 스폰 시도
+SpawnManager.SpawnRow (at MyDesk/SpawnManager:241)
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:194)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:20] [CLIENT] [SpawnRow] (일반몹) rowID=6 -> Spawn 성공: 빨라진 초록 달팽이, pattern=circlerandom, pos=(-3.8,8.9)
+SpawnManager.SpawnRow (at MyDesk/SpawnManager:420)
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:194)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:20] [CLIENT] [SetupMonsterCost] ent=빨라진 초록 달팽이, cost=100
+SpawnManager.SetupMonsterCost (at MyDesk/SpawnManager:527)
+SpawnManager.SpawnRow (at MyDesk/SpawnManager:450)
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:194)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:21] [CLIENT] [TestLog] 5s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:21] [CLIENT] [DaggerPooling] [Spawn] => level=1 => finalDamage=747 (pAtk=737)
+daggerPooling.Spawn (at MyDesk/daggerPooling:131)
+daggerPooling.OnUpdate (at MyDesk/daggerPooling:73)
+
+[10:44:21] [CLIENT] [DaggerPooling] Spawn -> buffLv=0 => spawnTime=5.00 (ratio=1.00)
+daggerPooling.OnUpdate (at MyDesk/daggerPooling:75)
+
+[10:44:22] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:22] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:22] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:22] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:22] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:22] [CLIENT] [TestLog] 6s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:22] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:22] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:22] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:22] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:22] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:23] [CLIENT] [TestLog] 7s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:24] [CLIENT] [TestLog] 8s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:24] [CLIENT] [SpawnRow] (일반몹) rowID=6 -> Spawn 성공: 빨라진 초록 달팽이, pattern=circlerandom, pos=(-9.8,-0.1)
+SpawnManager.SpawnRow (at MyDesk/SpawnManager:420)
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:194)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:25] [CLIENT] [TestLog] 9s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:26] [CLIENT] [TestLog] 10s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:26] [CLIENT] [HitEvent] 몬스터(빨라진 초록 달팽이) 피격 발생 -> DamagesCount=1, TotalDamage=747.0, hp(이전)=300
+MonsterState.HandleHitEvent (at MyDesk/MonsterState:449)
+
+[10:44:26] [CLIENT] [HitEvent] => 개별 데미지=747 -> hp=0
+MonsterState.HandleHitEvent (at MyDesk/MonsterState:463)
+
+[10:44:26] [CLIENT] [DailyQuestManager] Progress_Text 업데이트 완료 => 1/3000
+MonsterState.HandleOnDeath (at MyDesk/MonsterState:174)
+MonsterState.HandleHitEvent (at MyDesk/MonsterState:499)
+
+[10:44:26] [CLIENT] [DailyQuestManager] Progress Bar 업데이트 완료
+MonsterState.HandleOnDeath (at MyDesk/MonsterState:182)
+MonsterState.HandleHitEvent (at MyDesk/MonsterState:499)
+
+[10:44:26] [CLIENT] [DailyQuestManager] KillCount=1, MissionProgress=0.03%
+MonsterState.HandleOnDeath (at MyDesk/MonsterState:192)
+MonsterState.HandleHitEvent (at MyDesk/MonsterState:499)
+
+[10:44:26] [CLIENT] [ExpOrbAutoPickup] EntityMapChangedEvent 발생! (맵 변경 감지)
+ExpOrbAutoPickup.HandleEntityMapChangedEvent (at MyDesk/ExpOrbAutoPickup:69)
+
+[10:44:26] [CLIENT] [ExpOrbAutoPickup] (예외처리) 스폰 직후라서 oldMapName이 없음 -> 파괴 X
+ExpOrbAutoPickup.HandleEntityMapChangedEvent (at MyDesk/ExpOrbAutoPickup:76)
+
+[10:44:26] [CLIENT] [HitEvent] => 최종 Exp=101.0 drop
+MonsterState.HandleHitEvent (at MyDesk/MonsterState:511)
+
+[10:44:26] [CLIENT] [HitEvent] rnd=0.867, baseCost=100, dropChance=0.030
+MonsterState.HandleHitEvent (at MyDesk/MonsterState:526)
+
+[10:44:26] [CLIENT] [HitEvent] => 드롭 확률 미달, 힐/골드 모두 없음
+MonsterState.HandleHitEvent (at MyDesk/MonsterState:541)
+
+[10:44:26] [CLIENT] [Dagger] goingOut firstHit -> 빨라진 초록 달팽이, damage=747.0
+dagger.HandleTriggerEnterEvent (at MyDesk/dagger:149)
+
+[10:44:27] [CLIENT] [FinishTest] 총 이벤트 수: 9
+SpawnManager.FinishTest (at MyDesk/SpawnManager:536)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:153)
+
+[10:44:27] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:27] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:27] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:27] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:27] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:27] [CLIENT] [TestLog] 11s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:27] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:27] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:27] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:27] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:27] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:28] [CLIENT] [TestLog] 12s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:28] [CLIENT] [SpawnRow] (일반몹) rowID=6 -> Spawn 성공: 빨라진 초록 달팽이, pattern=circlerandom, pos=(5.3,4.1)
+SpawnManager.SpawnRow (at MyDesk/SpawnManager:420)
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:194)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:29] [CLIENT] [TestLog] 13s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:30] [CLIENT] [TestLog] 14s → rowId=6 name=빨라진 초록 달팽이 count=1
+SpawnManager.CheckSpawn (at MyDesk/SpawnManager:183)
+SpawnManager.OnBeginPlay (at MyDesk/SpawnManager:159)
+
+[10:44:32] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:32] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:32] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:32] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:32] [CLIENT] [Dagger] phase=returning -> goingOut 완료, 히트 대상 초기화
+dagger.OnUpdate (at MyDesk/dagger:81)
+
+[10:44:32] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:32] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:32] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:32] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:32] [CLIENT] [Dagger] 표창 제한 시간 만료 -> Destroy
+dagger.OnUpdate (at MyDesk/dagger:64)
+
+[10:44:33] [CLIENT] [ExpOrbAutoPickup] +101 EXP (버프Lv=0 => +0%)
+ExpOrbAutoPickup.OnUpdate (at MyDesk/ExpOrbAutoPickup:44)
